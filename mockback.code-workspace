@@ -41,7 +41,7 @@
           "cd ..",
           "cd mockback-service",
           "venv/Scripts/activate",
-          "python manage.py runserver 8020"
+          "python manage.py runserver"
         ]
       },
       {
