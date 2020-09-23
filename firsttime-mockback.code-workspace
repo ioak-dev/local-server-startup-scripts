@@ -1,0 +1,64 @@
+{
+  "folders": [
+    {
+      "path": "..\\mockback"
+    },
+    {
+      "path": "..\\mockback-service"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > prepare",
+        "description": "Prepare oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "pip install virtualenv",
+          "virtualenv venv",
+          "venv/Scripts/activate",
+          "pip install -r requirements.txt"
+        ]
+      },
+      {
+        "name": "oneauth-ui > prepare",
+        "description": "Prepare oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm install"
+        ]
+      },
+      {
+        "name": "mockback-ws > prepare",
+        "description": "Prepare mockback python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd mockback-service",
+          "pip install virtualenv",
+          "virtualenv venv",
+          "venv/Scripts/activate",
+          "pip install -r requirements.txt"
+        ]
+      },
+      {
+        "name": "mockback-ui > prepare",
+        "description": "Prepare mockback react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd mockback",
+          "npm install"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "folders": [
+    {
+      "path": "..\\timegrid"
+    },
+    {
+      "path": "..\\timegrid-express"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > start",
+        "description": "Start oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver 8020"
+        ]
+      },
+      {
+        "name": "oneauth-ui > start",
+        "description": "Start oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "timegrid-ws > build",
+        "description": "Start timegrid express web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd timegrid-express",
+          "npm run build:local"
+        ]
+      },
+      {
+        "name": "timegrid-ws > start",
+        "description": "Start timegrid express web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd timegrid-express",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "timegrid-ui > start",
+        "description": "Start timegrid react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd timegrid",
+          "npm run start"
+        ]
+      }
+    ]
+  }
+}

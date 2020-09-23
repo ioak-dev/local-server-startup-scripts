@@ -1,0 +1,60 @@
+{
+  "folders": [
+    {
+      "path": "..\\mockback"
+    },
+    {
+      "path": "..\\mockback-service"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > start",
+        "description": "Start oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver 8020"
+        ]
+      },
+      {
+        "name": "oneauth-ui > start",
+        "description": "Start oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "mockback-ws > start",
+        "description": "Start mockback python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd mockback-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver 8020"
+        ]
+      },
+      {
+        "name": "mockback-ui > start",
+        "description": "Start mockback react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd mockback",
+          "npm run start"
+        ]
+      }
+    ]
+  }
+}
