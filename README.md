@@ -11,7 +11,7 @@ Terminals: Run Single > to choose which module to start
 
 # Which workspace to open
 ## First time setup in local
-Open firsttime-<appname>
+Open firsttime-appname.code-workspace
 
 ## Day to day use case (after first time setup is completed once)
-Open <appname>
+Open appname.code-workspace
