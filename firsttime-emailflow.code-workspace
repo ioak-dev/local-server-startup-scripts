@@ -1,0 +1,64 @@
+{
+  "folders": [
+    {
+      "path": "..\\emailflow"
+    },
+    {
+      "path": "..\\emailflow-service-python"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > prepare",
+        "description": "Prepare oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "pip install virtualenv",
+          "virtualenv venv",
+          "venv/Scripts/activate",
+          "pip install -r requirements.txt"
+        ]
+      },
+      {
+        "name": "oneauth-ui > prepare",
+        "description": "Prepare oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm install"
+        ]
+      },
+      {
+        "name": "emailflow-ws > prepare",
+        "description": "Prepare emailflow python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd emailflow-service-python",
+          "pip install virtualenv",
+          "virtualenv venv",
+          "venv/Scripts/activate",
+          "pip install -r requirements.txt"
+        ]
+      },
+      {
+        "name": "emailflow-ui > prepare",
+        "description": "Prepare emailflow react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd emailflow",
+          "npm install"
+        ]
+      }
+    ]
+  }
+}
