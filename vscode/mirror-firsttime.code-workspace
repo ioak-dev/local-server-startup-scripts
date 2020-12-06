@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\mockback"
+      "path": "..\\..\\mirror"
     },
     {
-      "path": "..\\mockback-service"
+      "path": "..\\..\\mirror-graph-server"
     }
   ],
   "settings": {
@@ -35,27 +35,25 @@
         ]
       },
       {
-        "name": "mockback-ws > prepare",
-        "description": "Prepare mockback python web service server",
+        "name": "mirror-ws > prepare",
+        "description": "Prepare mirror express web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mockback-service",
-          "pip install virtualenv",
-          "virtualenv venv",
-          "venv/Scripts/activate",
-          "pip install -r requirements.txt"
+          "cd mirror-graph-server",
+          "npm install",
+          "npm run build:firsttime"
         ]
       },
       {
-        "name": "mockback-ui > prepare",
-        "description": "Prepare mockback react web application",
+        "name": "mirror-ui > prepare",
+        "description": "Prepare mirror react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mockback",
+          "cd mirror",
           "npm install"
         ]
       }

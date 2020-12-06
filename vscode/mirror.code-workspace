@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\mockback"
+      "path": "..\\..\\mirror"
     },
     {
-      "path": "..\\mockback-service"
+      "path": "..\\..\\mirror-graph-server"
     }
   ],
   "settings": {
@@ -33,25 +33,35 @@
         ]
       },
       {
-        "name": "mockback-ws > start",
-        "description": "Start mockback python web service server",
+        "name": "mirror-ws-build > start",
+        "description": "Build mirror web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mockback-service",
-          "venv/Scripts/activate",
-          "python manage.py runserver"
+          "cd mirror-graph-server",
+          "npm run build:local"
         ]
       },
       {
-        "name": "mockback-ui > start",
-        "description": "Start mockback react web application",
+        "name": "mirror-ws-run > start",
+        "description": "Start mirror web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mockback",
+          "cd mirror-graph-server",
+          "npm run start:local",
+        ]
+      },
+      {
+        "name": "mirror-ui > start",
+        "description": "Start mirror react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd mirror",
           "npm run start"
         ]
       }

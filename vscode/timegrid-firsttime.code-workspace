@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\emailflow"
+      "path": "..\\..\\timegrid"
     },
     {
-      "path": "..\\emailflow-service-python"
+      "path": "..\\..\\timegrid-express"
     }
   ],
   "settings": {
@@ -35,27 +35,24 @@
         ]
       },
       {
-        "name": "emailflow-ws > prepare",
-        "description": "Prepare emailflow python web service server",
+        "name": "timegrid-ws > prepare",
+        "description": "Prepare timegrid express web service server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd emailflow-service-python",
-          "pip install virtualenv",
-          "virtualenv venv",
-          "venv/Scripts/activate",
-          "pip install -r requirements.txt"
+          "cd timegrid-express",
+          "npm install"
         ]
       },
       {
-        "name": "emailflow-ui > prepare",
-        "description": "Prepare emailflow react web application",
+        "name": "timegrid-ui > prepare",
+        "description": "Prepare timegrid react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd emailflow",
+          "cd timegrid",
           "npm install"
         ]
       }

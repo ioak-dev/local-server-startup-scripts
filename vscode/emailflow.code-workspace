@@ -1,0 +1,60 @@
+{
+  "folders": [
+    {
+      "path": "..\\..\\emailflow"
+    },
+    {
+      "path": "..\\..\\emailflow-service-python"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > start",
+        "description": "Start oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver 8020"
+        ]
+      },
+      {
+        "name": "oneauth-ui > start",
+        "description": "Start oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "emailflow-ws > start",
+        "description": "Start emailflow python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd emailflow-service-python",
+          "venv/Scripts/activate",
+          "python manage.py runserver"
+        ]
+      },
+      {
+        "name": "emailflow-ui > start",
+        "description": "Start emailflow react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd emailflow",
+          "npm run start"
+        ]
+      }
+    ]
+  }
+}

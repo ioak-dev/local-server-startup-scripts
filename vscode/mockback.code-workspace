@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\emailflow"
+      "path": "..\\..\\mockback"
     },
     {
-      "path": "..\\emailflow-service-python"
+      "path": "..\\..\\mockback-service"
     }
   ],
   "settings": {
@@ -33,25 +33,25 @@
         ]
       },
       {
-        "name": "emailflow-ws > start",
-        "description": "Start emailflow python web service server",
+        "name": "mockback-ws > start",
+        "description": "Start mockback python web service server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd emailflow-service-python",
+          "cd mockback-service",
           "venv/Scripts/activate",
           "python manage.py runserver"
         ]
       },
       {
-        "name": "emailflow-ui > start",
-        "description": "Start emailflow react web application",
+        "name": "mockback-ui > start",
+        "description": "Start mockback react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd emailflow",
+          "cd mockback",
           "npm run start"
         ]
       }

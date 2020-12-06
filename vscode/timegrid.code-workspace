@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\timegrid"
+      "path": "..\\..\\timegrid"
     },
     {
-      "path": "..\\timegrid-express"
+      "path": "..\\..\\timegrid-express"
     }
   ],
   "settings": {
