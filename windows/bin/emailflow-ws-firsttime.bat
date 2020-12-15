@@ -1,8 +1,4 @@
 cd ../..
-cd emailflow-service-python
-pip install virtualenv
-virtualenv venv
-venv\Scripts\activate
-pip install -r requirements.txt
+cd emailflow-service
 pause
 REM exit

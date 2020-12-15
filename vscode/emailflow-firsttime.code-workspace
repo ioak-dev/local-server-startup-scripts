@@ -4,7 +4,7 @@
       "path": "..\\..\\emailflow"
     },
     {
-      "path": "..\\..\\emailflow-service-python"
+      "path": "..\\..\\emailflow-service"
     }
   ],
   "settings": {
@@ -36,16 +36,12 @@
       },
       {
         "name": "emailflow-ws > prepare",
-        "description": "Prepare emailflow python web service server",
+        "description": "Prepare emailflow web service server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd emailflow-service-python",
-          "pip install virtualenv",
-          "virtualenv venv",
-          "venv/Scripts/activate",
-          "pip install -r requirements.txt"
+          "cd emailflow-service"
         ]
       },
       {

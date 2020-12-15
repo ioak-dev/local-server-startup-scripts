@@ -1,3 +1,4 @@
 cd ../..
-cd emailflow-service-python
+cd emailflow-service
+gradlew bootrun
 venv\Scripts\activate & python manage.py runserver

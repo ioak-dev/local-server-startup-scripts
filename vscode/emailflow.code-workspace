@@ -4,7 +4,7 @@
       "path": "..\\..\\emailflow"
     },
     {
-      "path": "..\\..\\emailflow-service-python"
+      "path": "..\\..\\emailflow-service"
     }
   ],
   "settings": {
@@ -34,14 +34,13 @@
       },
       {
         "name": "emailflow-ws > start",
-        "description": "Start emailflow python web service server",
+        "description": "Start emailflow web service server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd emailflow-service-python",
-          "venv/Scripts/activate",
-          "python manage.py runserver"
+          "cd emailflow-service",
+          "./gradlew bootrun"
         ]
       },
       {
