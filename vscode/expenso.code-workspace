@@ -1,0 +1,59 @@
+{
+  "folders": [
+    {
+      "path": "..\\..\\expenso"
+    },
+    {
+      "path": "..\\..\\expenso-service"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > start",
+        "description": "Start oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver 8020"
+        ]
+      },
+      {
+        "name": "oneauth-ui > start",
+        "description": "Start oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "expenso-ws > start",
+        "description": "Start expenso web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd expenso-service",
+          "./gradlew bootrun"
+        ]
+      },
+      {
+        "name": "expenso-ui > start",
+        "description": "Start expenso react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd expenso",
+          "npm run start"
+        ]
+      }
+    ]
+  }
+}

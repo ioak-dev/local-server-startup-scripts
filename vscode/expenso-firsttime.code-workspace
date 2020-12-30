@@ -1,0 +1,60 @@
+{
+  "folders": [
+    {
+      "path": "..\\..\\expenso"
+    },
+    {
+      "path": "..\\..\\expenso-service"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > prepare",
+        "description": "Prepare oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "pip install virtualenv",
+          "virtualenv venv",
+          "venv/Scripts/activate",
+          "pip install -r requirements.txt"
+        ]
+      },
+      {
+        "name": "oneauth-ui > prepare",
+        "description": "Prepare oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm install"
+        ]
+      },
+      {
+        "name": "expenso-ws > prepare",
+        "description": "Prepare expenso web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd expenso-service"
+        ]
+      },
+      {
+        "name": "expenso-ui > prepare",
+        "description": "Prepare expenso react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd expenso",
+          "npm install"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "folders": [
+    {
+      "path": "..\\..\\infinite-reserve"
+    },
+    {
+      "path": "..\\..\\infinite-reserve-service"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > start",
+        "description": "Start oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver 8020"
+        ]
+      },
+      {
+        "name": "oneauth-ui > start",
+        "description": "Start oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "infinite-reserve-ws > start",
+        "description": "Start infinite-reserve web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd infinite-reserve-service",
+          "./gradlew bootrun"
+        ]
+      },
+      {
+        "name": "infinite-reserve-ui > start",
+        "description": "Start infinite-reserve react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd infinite-reserve",
+          "npm run start"
+        ]
+      }
+    ]
+  }
+}
