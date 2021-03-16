@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\..\\mirror"
+      "path": "..\\..\\janus"
     },
     {
-      "path": "..\\..\\mirror-graph-server"
+      "path": "..\\..\\janus-graph-server"
     }
   ],
   "settings": {
@@ -35,25 +35,25 @@
         ]
       },
       {
-        "name": "mirror-ws > prepare",
-        "description": "Prepare mirror express web service - graphql server",
+        "name": "janus-ws > prepare",
+        "description": "Prepare janus express web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mirror-graph-server",
+          "cd janus-graph-server",
           "npm install",
           "npm run build:firsttime"
         ]
       },
       {
-        "name": "mirror-ui > prepare",
-        "description": "Prepare mirror react web application",
+        "name": "janus-ui > prepare",
+        "description": "Prepare janus vue web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mirror",
+          "cd janus",
           "npm install",
           "npm run build"
         ]

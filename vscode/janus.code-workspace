@@ -1,0 +1,70 @@
+{
+  "folders": [
+    {
+      "path": "..\\..\\janus"
+    },
+    {
+      "path": "..\\..\\janus-graph-server"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "oneauth-ws > start",
+        "description": "Start oneauth python web service server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver 8020"
+        ]
+      },
+      {
+        "name": "oneauth-ui > start",
+        "description": "Start oneauth react web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "janus-ws-build > start",
+        "description": "Build janus web service - graphql server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd janus-graph-server",
+          "npm run build:local"
+        ]
+      },
+      {
+        "name": "janus-ws-run > start",
+        "description": "Start janus web service - graphql server",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd janus-graph-server",
+          "npm run start:local"
+        ]
+      },
+      {
+        "name": "janus-ui > start",
+        "description": "Start janus vue web application",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd janus",
+          "npm run serve"
+        ]
+      }
+    ]
+  }
+}
