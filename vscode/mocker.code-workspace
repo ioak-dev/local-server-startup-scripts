@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\..\\mockback"
+      "path": "..\\..\\mocker"
     },
     {
-      "path": "..\\..\\mockback-service"
+      "path": "..\\..\\mocker-service"
     }
   ],
   "settings": {
@@ -33,25 +33,25 @@
         ]
       },
       {
-        "name": "mockback-ws > start",
-        "description": "Start mockback python web service server",
+        "name": "mocker-ws > start",
+        "description": "Start mocker python web service server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mockback-service",
+          "cd mocker-service",
           "venv/Scripts/activate",
           "python manage.py runserver"
         ]
       },
       {
-        "name": "mockback-ui > start",
-        "description": "Start mockback react web application",
+        "name": "mocker-ui > start",
+        "description": "Start mocker react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mockback",
+          "cd mocker",
           "npm run start"
         ]
       }

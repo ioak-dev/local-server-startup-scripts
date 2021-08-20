@@ -1,24 +1,34 @@
 {
   "folders": [
     {
-      "path": "..\\..\\mirror-graph-server"
+      "path": "..\\..\\transit-graph-server"
     },
     {
-      "path": "..\\..\\mirror"
+      "path": "..\\..\\transit"
     }
   ],
   "settings": {
     "terminals.terminals": [
       {
-        "name": "oneauth-ws > start",
-        "description": "Start oneauth python web service server",
+        "name": "oneauth-ws-build > start",
+        "description": "Build oneauth web service",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
           "cd oneauth-service",
-          "venv/Scripts/activate",
-          "python manage.py runserver 8020"
+          "npm run build:local"
+        ]
+      },
+      {
+        "name": "oneauth-ws-run > start",
+        "description": "Start oneauth web service",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "npm run start:local"
         ]
       },
       {
@@ -29,39 +39,39 @@
           "cd [workspaceFolder]",
           "cd ..",
           "cd oneauth",
-          "npm run start:local"
+          "npm run start"
         ]
       },
       {
-        "name": "mirror-ws-build > start",
-        "description": "Build mirror web service - graphql server",
+        "name": "transit-ws-build > start",
+        "description": "Build transit web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mirror-graph-server",
+          "cd transit-graph-server",
           "npm run build:local"
         ]
       },
       {
-        "name": "mirror-ws-run > start",
-        "description": "Start mirror web service - graphql server",
+        "name": "transit-ws-run > start",
+        "description": "Start transit web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mirror-graph-server",
+          "cd transit-graph-server",
           "npm run start:local"
         ]
       },
       {
-        "name": "mirror-ui > start",
-        "description": "Start mirror react web application",
+        "name": "transit-ui > start",
+        "description": "Start transit react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd mirror",
+          "cd transit",
           "npm run start"
         ]
       }

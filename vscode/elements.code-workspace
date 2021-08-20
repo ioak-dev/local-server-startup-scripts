@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\..\\expenso-graph-server"
+      "path": "..\\..\\elements-app"
     },
     {
-      "path": "..\\..\\expenso"
+      "path": "..\\..\\elements-app-service"
     }
   ],
   "settings": {
@@ -43,35 +43,25 @@
         ]
       },
       {
-        "name": "expenso-ws-build > start",
-        "description": "Build expenso web service - graphql server",
+        "name": "elements-ws > start",
+        "description": "Start elements python web service server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd expenso-graph-server",
-          "npm run build:local"
+          "cd elements-app-service",
+          "venv/Scripts/activate",
+          "python manage.py runserver"
         ]
       },
       {
-        "name": "expenso-ws-run > start",
-        "description": "Start expenso web service - graphql server",
+        "name": "elements-ui > start",
+        "description": "Start elements react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd expenso-graph-server",
-          "npm run start:local"
-        ]
-      },
-      {
-        "name": "expenso-ui > start",
-        "description": "Start expenso react web application",
-        "focus": true,
-        "commands": [
-          "cd [workspaceFolder]",
-          "cd ..",
-          "cd expenso",
+          "cd elements-app",
           "npm run start"
         ]
       }
