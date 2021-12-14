@@ -1,31 +1,29 @@
 {
   "folders": [
     {
-      "path": "..\\..\\expenso"
+      "path": "..\\..\\expenso-graph-server"
     },
     {
-      "path": "..\\..\\expenso-service"
+      "path": "..\\..\\expenso"
     }
   ],
   "settings": {
     "terminals.terminals": [
       {
-        "name": "oneauth-ws > prepare",
-        "description": "Prepare oneauth python web service server",
+        "name": "oneauth-ws-build > prepare",
+        "description": "Build oneauth web service",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
           "cd oneauth-service",
-          "pip install virtualenv",
-          "virtualenv venv",
-          "venv/Scripts/activate",
-          "pip install -r requirements.txt"
+          "npm install",
+          "npm run build"
         ]
       },
       {
         "name": "oneauth-ui > prepare",
-        "description": "Prepare oneauth react web application",
+        "description": "Build oneauth react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
@@ -35,18 +33,20 @@
         ]
       },
       {
-        "name": "expenso-ws > prepare",
-        "description": "Prepare expenso web service server",
+        "name": "expenso-ws-build > prepare",
+        "description": "Build expenso web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd expenso-service"
+          "cd expenso-graph-server",
+          "npm install",
+          "npm run build"
         ]
       },
       {
         "name": "expenso-ui > prepare",
-        "description": "Prepare expenso react web application",
+        "description": "Build expenso react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",

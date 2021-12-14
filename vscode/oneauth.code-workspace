@@ -10,15 +10,25 @@
   "settings": {
     "terminals.terminals": [
       {
-        "name": "oneauth-ws > start",
-        "description": "Start oneauth python web service server",
+        "name": "oneauth-ws-build > start",
+        "description": "Build oneauth web service",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
           "cd oneauth-service",
-          "venv/Scripts/activate",
-          "python manage.py runserver 8020"
+          "npm run build:local"
+        ]
+      },
+      {
+        "name": "oneauth-ws-run > start",
+        "description": "Start oneauth web service",
+        "focus": true,
+        "commands": [
+          "cd [workspaceFolder]",
+          "cd ..",
+          "cd oneauth-service",
+          "npm run start:local"
         ]
       },
       {
@@ -29,7 +39,7 @@
           "cd [workspaceFolder]",
           "cd ..",
           "cd oneauth",
-          "npm run start:local"
+          "npm run start"
         ]
       }
     ]
