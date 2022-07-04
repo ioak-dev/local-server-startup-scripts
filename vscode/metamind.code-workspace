@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\..\\janus"
+      "path": "..\\..\\metamind-service"
     },
     {
-      "path": "..\\..\\janus-graph-server"
+      "path": "..\\..\\metamind"
     }
   ],
   "settings": {
@@ -43,36 +43,36 @@
         ]
       },
       {
-        "name": "janus-ws-build > start",
-        "description": "Build janus web service - graphql server",
+        "name": "metamind-ws-build > start",
+        "description": "Build metamind web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd janus-graph-server",
+          "cd metamind-service",
           "npm run build:local"
         ]
       },
       {
-        "name": "janus-ws-run > start",
-        "description": "Start janus web service - graphql server",
+        "name": "metamind-ws-run > start",
+        "description": "Start metamind web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd janus-graph-server",
+          "cd metamind-service",
           "npm run start:local"
         ]
       },
       {
-        "name": "janus-ui > start",
-        "description": "Start janus vue web application",
+        "name": "metamind-ui > start",
+        "description": "Start metamind react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd janus",
-          "npm run serve"
+          "cd metamind",
+          "npm run start"
         ]
       }
     ]

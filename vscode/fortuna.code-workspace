@@ -1,10 +1,10 @@
 {
   "folders": [
     {
-      "path": "..\\..\\expenso-graph-server"
+      "path": "..\\..\\fortuna-service"
     },
     {
-      "path": "..\\..\\expenso"
+      "path": "..\\..\\fortuna"
     }
   ],
   "settings": {
@@ -43,35 +43,35 @@
         ]
       },
       {
-        "name": "expenso-ws-build > start",
-        "description": "Build expenso web service - graphql server",
+        "name": "fortuna-ws-build > start",
+        "description": "Build fortuna web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd expenso-graph-server",
+          "cd fortuna-service",
           "npm run build:local"
         ]
       },
       {
-        "name": "expenso-ws-run > start",
-        "description": "Start expenso web service - graphql server",
+        "name": "fortuna-ws-run > start",
+        "description": "Start fortuna web service - graphql server",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd expenso-graph-server",
+          "cd fortuna-service",
           "npm run start:local"
         ]
       },
       {
-        "name": "expenso-ui > start",
-        "description": "Start expenso react web application",
+        "name": "fortuna-ui > start",
+        "description": "Start fortuna react web application",
         "focus": true,
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd expenso",
+          "cd fortuna",
           "npm run start"
         ]
       }
