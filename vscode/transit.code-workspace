@@ -1,7 +1,7 @@
 {
   "folders": [
     {
-      "path": "..\\..\\transit-graph-server"
+      "path": "..\\..\\transit-service"
     },
     {
       "path": "..\\..\\transit"
@@ -49,7 +49,7 @@
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd transit-graph-server",
+          "cd transit-service",
           "npm run build:local"
         ]
       },
@@ -60,7 +60,7 @@
         "commands": [
           "cd [workspaceFolder]",
           "cd ..",
-          "cd transit-graph-server",
+          "cd transit-service",
           "npm run start:local"
         ]
       },
